@@ -3,7 +3,7 @@
 
 	<!-- common properties -->
 	<xacro:property name="M_PI" value="3.1415926535897931" />
-	<xacro:property name="threshold" value="0.01" />
+	<xacro:property name="threshold" value="1" />
 
 	<!-- arm limits positions (deg) -->
 	<xacro:property name="joint_1_limit" value="${M_PI * (169 + 169) / 180}" />
@@ -17,6 +17,20 @@
 	<xacro:property name="joint_3_limit_soft" value="${joint_3_limit - threshold}" />
 	<xacro:property name="joint_4_limit_soft" value="${joint_4_limit - threshold}" />
 	<xacro:property name="joint_5_limit_soft" value="${joint_5_limit - threshold}" />
+
+	<xacro:property name="joint_1_limit_upper" value="${5.84014 - 0.03}" />
+	<xacro:property name="joint_2_limit_upper" value="${2.61799 - 0.03}" />
+	<xacro:property name="joint_3_limit_upper" value="${-0.0157 - 0.03}" />
+	<xacro:property name="joint_4_limit_upper" value="${3.4292  - 0.03}" />
+	<xacro:property name="joint_5_limit_upper" value="${5.64159 - 0.03}" />
+
+	<xacro:property name="joint_1_limit_lower" value="${0.0100692 + 0.03}" />
+	<xacro:property name="joint_2_limit_lower" value="${0.0100692 + 0.03}" />
+	<xacro:property name="joint_3_limit_lower" value="${-5.02655  + 0.03}" />
+	<xacro:property name="joint_4_limit_lower" value="${0.0221239 + 0.03}" />
+	<xacro:property name="joint_5_limit_lower" value="${0.110619  + 0.03}" />
+
+	
 
 	<!-- dynamic properties : mass (kg) Alu data sheet -->
 	<xacro:property name="link_0_mass" value="0.961" />

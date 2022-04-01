@@ -15,6 +15,9 @@
   <material name="youBot/Black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
+  <material name="Black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
   <material name="youBot/Red">
     <color rgba="1.0 0.0 0.0 1.0"/>
   </material>
